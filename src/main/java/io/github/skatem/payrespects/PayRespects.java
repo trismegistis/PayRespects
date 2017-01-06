@@ -37,6 +37,7 @@ import org.spongepowered.api.text.format.TextStyles;
 @Plugin(
         id = "payrespects",
         name = "PayRespects",
+        version = "1.0.0",
         description = "Type /f to pay respects when a player dies.",
         authors = {
                 "skatem"
