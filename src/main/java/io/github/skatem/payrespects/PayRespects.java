@@ -36,8 +36,8 @@ import org.spongepowered.api.text.format.TextStyles;
 
 @Plugin(
         id = "payrespects",
-        name = "PayRespects",
-        version = "1.0.0",
+        name = "PayRespects TrismegistFork",
+        version = "1.0.1",
         description = "Type /f to pay respects when a player dies.",
         authors = {
                 "skatem"
@@ -48,19 +48,9 @@ public class PayRespects {
     @Inject
     private Logger logger;
 
-
     @Listener
     public void onServerStart(GameStartedServerEvent event) {
-        // Hey! The server has started!
         this.logger.info("Hello world!");
-        // Try loading some configuration settings for a welcome message to players
-        // when they join!
-    }
-
-    @Listener
-    public void onPlayerJoin(ClientConnectionEvent.Join event, @Getter("getTargetEntity") Player player) {
-        // The text message could be configurable, check the docs on how to do so!
-        player.sendMessage(Text.of(TextColors.AQUA, TextStyles.BOLD, "Hi " + player.getName()));
     }
 
     @Listener
